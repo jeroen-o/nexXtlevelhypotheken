@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 — Pagina niet gevonden — NexXt Level Hypotheken</title>
+  <meta name="theme-color" content="#1e3a8a" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .err-wrap { min-height: 70vh; display: flex; align-items: center; justify-content: center; padding: 80px 20px; text-align: center; background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%); color: var(--paper); }
+    .err-num { font-size: clamp(120px, 20vw, 220px); font-weight: 800; letter-spacing: -0.04em; line-height: 1; color: var(--orange); margin-bottom: 16px; }
+    .err-wrap h1 { color: var(--paper); margin-bottom: 16px; }
+    .err-wrap p { color: rgba(255,255,255,0.8); margin: 0 auto 32px; max-width: 50ch; }
+    .err-wrap .links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <div class="err-wrap">
+    <div>
+      <div class="err-num">404</div>
+      <h1>Pagina niet gevonden.</h1>
+      <p>De pagina die u zoekt bestaat niet, is verplaatst of heeft nooit bestaan. Geen probleem — u vindt vast wat u zoekt op een van deze plekken.</p>
+      <div class="links">
+        <a class="btn btn-orange" href="index.html">Naar de homepage <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="contact.html">Contact opnemen</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-bottom">
+        <span>© <span id="year">2026</span> NexXt Level Hypotheken — KvK 09190751</span>
+        <a href="index.html" style="color: rgba(255,255,255,0.7);">Terug naar home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
